@@ -1,0 +1,13 @@
+module.exports = {
+    // URL to open when the "About this app" menu item is clicked.
+    ABOUT_URL: 'https://www.numbas.org.uk/lockdown-app', 
+    
+    // Salt for the magic link encryption
+    CRYPT_SALT: '', 
+
+    // The user agent string for this app
+    USER_AGENT: 'Numbas lockdown',  
+
+    // The root URL of the auto-update server
+    UPDATER_URL: 'https://www.numbas.org.uk/lockdown-app/update'
+};

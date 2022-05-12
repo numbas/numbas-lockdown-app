@@ -1,0 +1,12 @@
+html {
+    font-family: sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
