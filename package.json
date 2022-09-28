@@ -7,7 +7,7 @@
       "url": "https://www.numbas.org.uk"
   },
   "license": "Apache-2.0",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "homepage": "https://www.numbas.org.uk/lockdown-app",
   "description": "A locked-down browser for running Numbas assessments",
   "repository": "https://github.com/numbas/numbas-lockdown-app",
@@ -36,15 +36,16 @@
     "linux": {
       "category": "Network",
       "target": "deb",
-      "desktop": {
-          "MimeType": "x-scheme-handler/numbas;"
-      }
+      "protocols": [
+        {"name": "Numbas lockdown", "schemes": ["numbas"]}
+      ]
     },
     "win": {
       "target": "msi"
     },
     "msi": {
-      "perMachine": true
+      "perMachine": true,
+      "runAfterFinish": false
     },
     "mac": {
       "category": "public.app-category.education",
