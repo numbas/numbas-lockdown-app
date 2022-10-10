@@ -45,7 +45,7 @@
     },
     "msi": {
       "perMachine": true,
-      "runAfterFinish": false
+      "runAfterFinish": true
     },
     "mac": {
       "category": "public.app-category.education",
