@@ -99,6 +99,8 @@ function createWindow(init_url) {
         mainWindow = null;
     });
 
+    mainWindow.maximize();
+
     return mainWindow;
 }
 
