@@ -21,7 +21,7 @@
     "start": "electron .",
     "dist": "electron-builder",
     "build_windows": "electron-builder --win portable msi",
-    "build_mac": "electron-builder --macos",
+    "build_mac": "electron-builder --macos --universal",
     "build_linux": "electron-builder --linux AppImage deb"
   },
   "build": {
