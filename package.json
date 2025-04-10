@@ -2,9 +2,9 @@
   "name": "Numbas-lockdown",
   "productName": "Numbas lockdown",
   "author": {
-      "name": "Numbas",
-      "email": "numbas@ncl.ac.uk",
-      "url": "https://www.numbas.org.uk"
+    "name": "Numbas",
+    "email": "numbas@ncl.ac.uk",
+    "url": "https://www.numbas.org.uk"
   },
   "license": "Apache-2.0",
   "version": "3.0.3",
@@ -13,8 +13,8 @@
   "repository": "https://github.com/numbas/numbas-lockdown-app",
   "main": "src/main.js",
   "devDependencies": {
-    "electron": "^21.0.0",
-    "electron-builder": "^23.3.3"
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
@@ -37,7 +37,12 @@
       "category": "Network",
       "target": "deb",
       "protocols": [
-        {"name": "Numbas lockdown", "schemes": ["numbas"]}
+        {
+          "name": "Numbas lockdown",
+          "schemes": [
+            "numbas"
+          ]
+        }
       ]
     },
     "win": {

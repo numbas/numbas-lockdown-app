@@ -53,7 +53,9 @@ if(!app.isPackaged) {
      * put null on the left of the list so the optional arguments always start at index 2.
      */
     process.argv.splice(0,1);
+    process.argv = process.argv.filter(x => !x.startsWith('--'));
 }
+console.log(process.argv);
 
 app.on('activate', function() {
   // On OS X it's common to re-create a window in the app when the
