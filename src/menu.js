@@ -1,6 +1,7 @@
 const {app} = require('electron');
 const VERSION = app.getVersion();
 const isMac = process.platform === 'darwin'
+const {ABOUT_URL} = require('../config.js');
 
 const template = [
     // App menu - Mac only
